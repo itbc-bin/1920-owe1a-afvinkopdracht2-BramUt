@@ -3,7 +3,7 @@ seq_path = input("FASTA path: ")
 seq = open(seq_path)
 sequentie = ""
 
-#Filteren line die bbeginnen met > en der whitespaces halen uit de rest
+#Filteren lines die beginnen met > en der whitespaces halen uit de rest
 for regel in seq:
     if ">" not in regel:
         sequentie += regel.rstrip()
